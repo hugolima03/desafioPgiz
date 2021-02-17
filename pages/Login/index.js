@@ -7,6 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  StatusBar,
 } from 'react-native';
 
 export default function Login({ navigation }) {
@@ -19,6 +20,7 @@ export default function Login({ navigation }) {
         height: 812,
       }}
     >
+      <StatusBar hidden></StatusBar>
       <Image source={require('../../assets/img/Logo/Logo.png')} />
       <View style={styles.formContainer}>
         <Text style={styles.title}>Entrar</Text>
