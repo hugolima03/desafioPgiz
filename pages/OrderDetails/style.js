@@ -66,5 +66,33 @@ export default styles = StyleSheet.create({
     borderBottomEndRadius: 5,
 
     padding: 15,
-  }
+  },
+  orderCardStatusPendingButton: {
+    width: 86,
+    height: 29,
+    backgroundColor: '#fff',
+    borderRadius: 5,
+
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  orderCardStatusPendingButtonText: {
+    fontWeight: '500',
+    fontSize: 12,
+  },
+  boldText: {
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  normalText: {
+    fontSize: 12,
+    fontWeight: '400',
+    lineHeight: 16,
+  },
+  buttonWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 15,
+  },
 });

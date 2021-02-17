@@ -34,7 +34,6 @@ export default function OrderList({ navigation }) {
         <Text style={styles.headerTitle}>Gestão de Pedidos</Text>
         <TouchableOpacity
           style={styles.headerButton}
-          onPress={() => navigation.navigate('Detalhes')}
         >
           <Image source={require('../../assets/img/Icons/filter.png')} />
           <Text style={styles.headerButtonText}>Filtro</Text>
