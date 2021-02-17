@@ -9,13 +9,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import OrderCardStatusPending from '../../components/orderCardStatusPending/';
-import OrderCardStatusConfirmed from '../../components/orderCardStatusConfirmed';
-import OrderCardStatusPreparing from '../../components/orderCardStatusPreparing';
-import OrderCardStatusDelivering from '../../components/orderCardStatusDelivering/';
-import OrderCardStatusDelivered from '../../components/orderCardStatusDelivered/';
-
-export default function OrderList({ navigation }) {
+export default function OrderDetails() {
   return (
     <ScrollView
       style={styles.container}
@@ -34,7 +28,7 @@ export default function OrderList({ navigation }) {
         <Text style={styles.headerTitle}>Gestão de Pedidos</Text>
         <TouchableOpacity
           style={styles.headerButton}
-          onPress={() => navigation.navigate('Detalhes')}
+          onPress={() => navigation.navigate('Pedidos')}
         >
           <Image source={require('../../assets/img/Icons/filter.png')} />
           <Text style={styles.headerButtonText}>Filtro</Text>
@@ -42,11 +36,6 @@ export default function OrderList({ navigation }) {
       </View>
 
       <View style={styles.cardContent}>
-        <OrderCardStatusPending name="Leonercio" code="#00005" navigation={navigation}/>
-        <OrderCardStatusConfirmed name="Rodrigues" code="#00004" navigation={navigation}/>
-        <OrderCardStatusPreparing name="Dlanor" code="#00003" navigation={navigation}/>
-        <OrderCardStatusDelivering name="Lukas" code="#00002" navigation={navigation}/>
-        <OrderCardStatusDelivered name="Mitchel" code="#00002" navigation={navigation}/>
       </View>
     </ScrollView>
   );

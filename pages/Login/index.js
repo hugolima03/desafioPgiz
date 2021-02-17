@@ -7,7 +7,6 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-  Button,
 } from 'react-native';
 
 export default function Login({ navigation }) {
