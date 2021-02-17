@@ -27,10 +27,10 @@ export default function App() {
         />
         <Text style={styles.label}>Senha</Text>
         <TextInput
-          type="Flat"
+          type="password"
           style={styles.passwordInput}
           label="Email"
-          value="********"
+          secureTextEntry={true}
         />
         <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
         <TouchableOpacity style={styles.primaryButton}>
@@ -110,7 +110,6 @@ const styles = StyleSheet.create({
       width: 3,
       height: 3,
     },
-    shadowRadius: 16,
     shadowOpacity: 1.0,
     elevation: 1,
     color: '#fff',
